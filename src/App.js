@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Toys from './components/Toys';
+import toys from './models/toys';
+
+
+const state = {
+  toys
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+       <Toys toyInfo={state.toys[0]}/> 
+      </div>
+      <div>
+      <Toys toyInfo={state.toys[1]}/>
+      </div>
+      <div>
+      <Toys toyInfo={state.toys[2]}/>
+      </div>
+      
+      
+    
     </div>
   );
 }

@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: flex;
+ 
+  justify-content: space-evenly;
+  align-items: space-evenly;
+ 
+  
 }
 
 .App-logo {
@@ -27,6 +33,29 @@
 .App-link {
   color: #61dafb;
 }
+body{
+  display: flex;
+ background-color: #1f1f1f;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
+.toyReceipt{
+  padding-top: 10px;
+ color: red;
+background-color: rgb(255, 255, 255);
+  border: solid thick blue;
+  height: 450px;
+  width: 200px;
+  margin: 20px;
+
+}
+.toyReceipt:hover{
+  background-color: yellow;
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
